@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "945485411339",
+    "project_id": "note-app-devwitheasy",
+    "storage_bucket": "note-app-devwitheasy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945485411339:android:8872eec99cb51bd4fcc30e",
+        "android_client_info": {
+          "package_name": "com.no"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlaLabt7JCPZWk7cKhtam4bzIX6f8Ux88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
