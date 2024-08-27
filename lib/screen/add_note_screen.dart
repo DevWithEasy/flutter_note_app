@@ -25,7 +25,7 @@ class AddNoteScreen extends StatelessWidget {
                         'title' : titleController.text,
                         'description' : descriptionController.text
                       })
-                          .then((value) => print("User Added"))
+                          .then((value)=>ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Note Created.'))))
                           .catchError((error) => print("Failed to add user: $error"));
                       titleController.clear();
                       descriptionController.clear();
@@ -49,6 +49,7 @@ class AddNoteScreen extends StatelessWidget {
                     if(value!.isEmpty){
                       return 'Title is required.';
                     }
+                    return null;
                   },
                   decoration: const InputDecoration(
                     labelText: 'Title'
@@ -61,6 +62,7 @@ class AddNoteScreen extends StatelessWidget {
                     if(value!.isEmpty){
                       return 'Description is required.';
                     }
+                    return null;
                   },
                   maxLines: null,
                   decoration: const InputDecoration(
